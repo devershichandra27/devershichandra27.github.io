@@ -2,28 +2,64 @@
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    max-width: 2000px;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
-    color: #222;
-    padding-bottom: 48px;
+    position: absolute;
 }
 
 .container {
-    max-width: 1200px;
-    margin-left: 16px;
+    position: relative;
+    padding: 8px;
     background-color: aqua;
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+}
+
+.headline {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+.quote-block {
+    text-align: left;
+    margin: 16px;
+    width: 50vw;
+    font-style: italic;
+    line-height: 2;
 }
 
 .nav {
     display: flex;
     flex-direction: column;
+}
+
+.event-nav {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+.event-card {
+    background-size: cover;
+    background-position: center;
+    border-radius: 56px;
+    height: 160px;
+    width: 80vw;
+    cursor: pointer;
+    margin: 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.event-card > a {
+    color: white;
 }
